@@ -11,4 +11,10 @@ describe("Test Suite for Spidey  Description", ()=>{
 		expect(andreGarfield.movies).toBe(2);
 		expect(andreGarfield.studio).toBe("Sony");
 	});
+
+		test('Testing the use of getInfo()', () =>{
+		const tomHolland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel");
+		expect(tomHolland.getSpideyInfo()).toBe("Hey I´m Tom Holland from Marvel studio");
+	
+	});
 })
